@@ -71,6 +71,6 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
    config.vm.provision "shell", inline: <<-SHELL
      apt-get update
-     apt-get install -y zlib1g-dev libxml2 Cython requests
+     apt-get install -y zlib1g-dev libxml2 Cython libxslt1-dev python3-dev
    SHELL
 end
